@@ -10,6 +10,9 @@ import torch.nn as nn
 #   最后接上一个残差边
 #---------------------------------------------------------------------#
 class BasicBlock(nn.Module):
+    """
+
+    """
     def __init__(self, inplanes, planes):
         super(BasicBlock, self).__init__()
         self.conv1  = nn.Conv2d(inplanes, planes[0], kernel_size=1, stride=1, padding=0, bias=False)
